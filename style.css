@@ -1,0 +1,255 @@
+*{
+  box-sizing: border-box;    
+  overflow-x: hidden;
+}
+  h1, h2,h3,h4,p {
+  overflow-y: hidden;
+  }
+  nav{
+      position: absolute;
+      z-index: 100;
+      left: 20px;
+      top: 20px;
+      height: 60px;
+      width: 100%;
+  }
+  nav a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+  nav a:hover{
+  color: #fff;
+  }
+
+  .header{
+  display: flex;
+  padding-top: 75px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: linear-gradient(#36bed9,#29bad7);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;    
+}
+  .header-content h1, h3 {
+  padding: 0 10px;
+  color: #fff;
+}
+  .header-content .linea{
+  border: 0;
+  width: 80%;
+  height: .1rem;
+  background-image: linear-gradient(to right,transparent,#000,transparent);
+  background-color:transparent;
+  margin-bottom: 1.5rem;
+}
+  .button-cont{
+    
+  width: 100%;  
+  background: linear-gradient(#36bed9,#29bad7);
+}
+/*BUTTON*/
+  .button {
+  display: inline-block;
+  border-radius: 4px;
+  background: linear-gradient(#36bed9,#29bad7); 
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+  margin-left: 60%;
+  transform: translateX(-100%);
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  /*SERVICIOS rgba(255, 254, 254, 0.842);*/
+  .servicios{
+  text-align: center;  
+  padding-top: 80px;
+  background:  rgba(255, 254, 254, 0.774);
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+  .servicios-content .serv-hr {
+  border: 0;
+  width: 80%;
+  height: .1rem;
+  background-image: linear-gradient(to right,transparent,#000,transparent);
+  background-color:transparent;
+  margin-bottom: 4rem;
+  }
+
+
+  .serv{
+  margin: 20px;
+  padding-bottom: 20px;
+  }
+  .serv p{
+  text-align: start;
+  font-size: 1rem;
+  }
+  .dis {
+  padding-bottom: 2rem;
+  }
+  .admin{
+  padding-bottom: 2rem;
+  }
+  .responsive{
+    padding-bottom: 2rem;
+  }
+  .mantinimiento{
+    padding-bottom: 20px;
+  }
+/*BOXES SERVICIOS*/
+  .content-items {
+  border: 1px solid #d9d9d9;
+  margin: 0 50px;
+  }
+  .content-items .sub-content {
+  display: inline-block;
+  width: 100%;
+  }
+  .content-items .item {
+  display: inline;
+  font-size: 25px;
+  }
+  
+  .content-items .ico {
+  cursor: pointer;
+  display: inline;
+  float: right;
+  font-size: 25px;
+  margin: 15px;  
+  }
+  
+  .content-items p {
+  font-size: 18px;
+  color: #000;
+  }
+  .item-contenido{   
+  border-top: 1px solid #d9d9d9;
+  padding: 30px;
+  }
+
+/*SKILLS*/
+  .skills-container{
+  padding-top: 65px;
+  background: linear-gradient(#36bed9,#29bad7);
+  }
+  .col-xs-12{
+  padding-bottom: 20px;
+  }
+  .col-xs-12 h2{
+  text-align: center;
+  color: #ffffff;
+  }
+  .col-xs-12 .skills-hr {
+  border: 0;
+  width: 80%;
+  height: .1rem;
+  background-image: linear-gradient(to right,transparent,#ffffff,transparent);
+  background-color:transparent;
+  margin-bottom: 4rem;
+  }
+  img{
+  width: 10rem;
+  max-width: 100%;
+  border-radius: 2rem;
+  }
+  .image-container{
+  overflow-y: hidden;
+  text-align: center;
+  padding: 30px 10px;
+  }
+
+
+/*CONTACTO*/
+  .contacto{
+  color: #fff;
+  text-align: center;
+  padding: 20px 0 ;
+  }
+  .contacto h2{
+    padding-bottom: 10px;
+  }
+/*LINKS*/
+  .links{  
+  padding: 18x;
+  }
+  .links a img {
+  max-height: 50px;
+  max-width: 50px;
+  }
+  .links img{
+  border-radius:10rem ;
+  background: #FFFFFF;
+  }
+  .links .github{
+  margin-right: 10px;
+  }
+  .links .linkedin{
+  margin-left: 10px ;
+  }
+
+  @media (max-width: 400px){
+    /*BUTTON MIS SKILLS*/
+    .button{
+      width: 150px;
+      margin: 5px 5px 5px 90%;
+    }
+    .serv .col-sm-12{
+      padding-bottom: 1rem;
+    }
+    .content-items{
+      margin: 0;
+    }
+    .content-items .item{
+      font-size: 18px;
+    }
+    .content-items .ico{
+      margin: 8px;
+      font-size: 1rem;
+    }
+  }
+  @media (max-width:360px){
+    .button{
+      margin: 5px 5px 5px 70%;
+    }
+  }
+  @media (max-width: 280px){
+
+    .button{
+      margin: 5px 5px 5px 100%;
+    }
+  }
